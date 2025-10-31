@@ -1,35 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>EcoPulse - The Heartbeat of Change</title>
-  
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>EcoPulse — SEU | Faculty of Sports Management</title>
+  <meta name="description" content="EcoPulse — The heartbeat of change. Student-led sustainability initiative by the Faculty of Sports Management (SEU)." />
+
   <!-- AOS Animation Library -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
-  
+
   <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif;
-      background: #ffffff;
-      color: #222;
+    :root{
+      --green:#2ea44f;
+      --accent:#1f8a3d;
+      --dark:#0b2b1a;
+      --beige:#fbf7ef;
+      --muted:#6b6b6b;
+      --card:#ffffff;
+      --radius:14px;
+      font-family: 'Poppins', Inter, system-ui, -apple-system, 'Segoe UI', Roboto, Arial;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      background:linear-gradient(180deg,var(--beige),#fff 40%);
+      color:var(--dark);
+      -webkit-font-smoothing:antialiased;
     }
 
-    /* Logo */
-    .logo {
-      display: flex;
-      align-items: center;
-      padding: 20px;
+    /* Header */
+    header{
+      display:flex;align-items:center;gap:16px;
+      padding:18px 6vw;
+      background:rgba(255,255,255,0.6);
+      backdrop-filter: blur(6px);
+      position:sticky;top:0;z-index:40;
+      border-bottom:1px solid rgba(11,43,26,0.04)
     }
-    .logo img {
-      height: 60px;
+    .logo {display:flex;align-items:center;gap:12px}
+    .logo img{width:64px;height:64px;object-fit:contain;border-radius:10px;box-shadow: 0 6px 18px rgba(46,164,79,0.08)}
+    h1{font-size:18px;margin:0}
+    .navBtns{margin-left:auto;display:flex;gap:10px}
+    .btn{
+      background:var(--green);
+      color:#fff;
+      padding:9px 14px;
+      border-radius:12px;
+      border:none;
+      cursor:pointer;
+      font-weight:700;
+      box-shadow:0 6px 18px rgba(46,164,79,0.14);
+      transition: transform 0.25s ease;
     }
+    .btn.ghost{background:transparent;color:var(--dark);border:1px solid rgba(11,43,26,0.06)}
+    .btn:hover { transform: scale(1.08); }
 
-    /* Parallax Section */
+    main{max-width:1100px;margin:36px auto;padding:0 6vw}
+
+    /* Parallax Hero Section */
     .parallax {
-      background-image: url('ecology_image1.jpeg'); /* Replace later */
+      background-image: url('ecology_image1.jpeg');
       height: 80vh;
       background-attachment: fixed;
       background-position: center;
@@ -44,84 +74,7 @@
       font-weight: bold;
     }
 
-    /* Buttons Pop Animation */
-    .btn {
-      background: #2e8b57;
-      color: #fff;
-      border: none;
-      padding: 12px 30px;
-      border-radius: 6px;
-      font-size: 1rem;
-      cursor: pointer;
-      transition: transform 0.25s ease;
-    }
-    .btn:hover {
-      transform: scale(1.08);
-    }
-
-    section {
-      padding: 60px 80px;
-    }
-  </style>
-</head>
-<body>
-
-  <!-- Logo Section -->
-  <div class="logo" data-aos="fade-in">
-    <img src="EcoPulse logo.jpeg" alt="EcoPulse Logo"> <!-- Replace later with user logo file -->
-  </div>
-
-  <!-- Parallax Banner -->
-  <div class="parallax" data-aos="fade-in">
-    EcoPulse
-  </div>
-
-  <!-- Welcome Section -->
-  <section data-aos="fade-in">
-    <h2>The Heartbeat of Change</h2>
-    <p>
-      We are committed to creating a sustainable and environmentally conscious campus community.
-      Join us in taking real steps toward change.
-    </p>
-    <button class="btn">Join the Movement</button>
-  </section>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-  <script>
-    AOS.init({ duration: 1200 });
-  </script>
-</body>
-</html><!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>EcoPulse — SEU | Faculty of Sports Management</title>
-  <meta name="description" content="EcoPulse — The heartbeat of change. Student-led sustainability initiative by the Faculty of Sports Management (SEU)." />
-  <style>
-    :root{
-      --green:#2ea44f;
-      --accent:#1f8a3d;
-      --dark:#0b2b1a;
-      --beige:#fbf7ef;
-      --muted:#6b6b6b;
-      --glass: rgba(255,255,255,0.9);
-      --card:#ffffff;
-      --radius:14px;
-      font-family: 'Poppins', Inter, system-ui, -apple-system, 'Segoe UI', Roboto, Arial;
-    }
-    *{box-sizing:border-box}
-    body{margin:0;background:linear-gradient(180deg,var(--beige),#fff 40%);color:var(--dark);-webkit-font-smoothing:antialiased}
-    header{
-      display:flex;align-items:center;gap:16px;padding:18px 6vw;background:rgba(255,255,255,0.6);backdrop-filter: blur(6px);position:sticky;top:0;z-index:40;border-bottom:1px solid rgba(11,43,26,0.04)
-    }
-    .logo {display:flex;align-items:center;gap:12px}
-    .logo img{width:64px;height:64px;object-fit:contain;border-radius:10px;box-shadow: 0 6px 18px rgba(46,164,79,0.08)}
-    h1{font-size:18px;margin:0}
-    .navBtns{margin-left:auto;display:flex;gap:10px}
-    .btn{background:var(--green);color:#fff;padding:9px 14px;border-radius:12px;border:none;cursor:pointer;font-weight:700;box-shadow:0 6px 18px rgba(46,164,79,0.14)}
-    .btn.ghost{background:transparent;color:var(--dark);border:1px solid rgba(11,43,26,0.06)}
-    main{max-width:1100px;margin:36px auto;padding:0 6vw}
+    /* Sections & Cards */
     .hero{
       display:grid;grid-template-columns:1fr 360px;gap:28px;align-items:center;margin-bottom:26px;
     }
@@ -130,6 +83,7 @@
       border-radius:var(--radius);padding:28px;box-shadow:0 12px 40px rgba(11,43,26,0.04)
     }
     .kicker{display:inline-block;padding:6px 10px;border-radius:999px;background:rgba(31,138,61,0.12);color:var(--accent);font-weight:700;margin-bottom:10px}
+    h2,h3{color:var(--dark)}
     h2{font-size:28px;margin:8px 0 10px}
     p.lead{color:var(--muted);line-height:1.5;margin-bottom:18px}
     .actions{display:flex;gap:12px;flex-wrap:wrap}
@@ -142,24 +96,22 @@
     ul{padding-left:18px}
     .joinCard{display:flex;gap:16px;align-items:center;justify-content:space-between;flex-wrap:wrap}
     footer{padding:16px 6vw;text-align:center;color:var(--muted);font-size:14px;margin-top:28px}
-    /* responsive */
+
+    /* Responsive */
     @media (max-width:900px){
       .hero{grid-template-columns:1fr;gap:16px}
       .heroCard{order:2}
       .qrWrap img{width:150px;height:150px}
       .grid3{grid-template-columns:1fr}
     }
-    /* small helper */
     .muted{color:var(--muted)}
-    .pill{display:inline-block;padding:6px 10px;border-radius:999px;background:rgba(31,138,61,0.08);color:var(--accent);font-weight:700}
     a.linkish{color:var(--accent);font-weight:700;text-decoration:none}
   </style>
 </head>
 <body>
 
-<header>
+<header data-aos="fade-down">
   <div class="logo">
-    <!-- Replace src with your real logo filename (EcoPulse_logo.png) -->
     <img src="EcoPulse logo.jpeg" alt="EcoPulse logo" />
     <div>
       <h1>EcoPulse</h1>
@@ -173,8 +125,15 @@
   </div>
 </header>
 
+<!-- Parallax Hero -->
+<div class="parallax" data-aos="fade-in">
+  EcoPulse — The Heartbeat of Change
+</div>
+
 <main>
-  <section class="hero">
+
+  <!-- HERO -->
+  <section class="hero" data-aos="fade-up">
     <div class="heroCard">
       <span class="kicker">EcoPulse • SEU</span>
       <h2>Small actions. Big pulse.</h2>
@@ -186,53 +145,26 @@
       </div>
 
       <div style="margin-top:18px" class="grid3">
-        <div class="cardSmall">
-          <div style="display:flex;gap:10px;align-items:center">
-            <div class="icon">♻️</div>
-            <div>
-              <strong>Collect</strong>
-              <div class="muted" style="font-size:13px">DIY bins in locker rooms & gym</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="cardSmall">
-          <div style="display:flex;gap:10px;align-items:center">
-            <div class="icon">🌱</div>
-            <div>
-              <strong>Reuse</strong>
-              <div class="muted" style="font-size:13px">Planters, art & campus projects</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="cardSmall">
-          <div style="display:flex;gap:10px;align-items:center">
-            <div class="icon">📊</div>
-            <div>
-              <strong>Track</strong>
-              <div class="muted" style="font-size:13px">Live stats & leaderboards</div>
-            </div>
-          </div>
-        </div>
+        <div class="cardSmall" data-aos="zoom-in"><div style="display:flex;gap:10px;align-items:center"><div class="icon">♻️</div><div><strong>Collect</strong><div class="muted" style="font-size:13px">DIY bins in locker rooms & gym</div></div></div></div>
+        <div class="cardSmall" data-aos="zoom-in" data-aos-delay="100"><div style="display:flex;gap:10px;align-items:center"><div class="icon">🌱</div><div><strong>Reuse</strong><div class="muted" style="font-size:13px">Planters, art & campus projects</div></div></div></div>
+        <div class="cardSmall" data-aos="zoom-in" data-aos-delay="200"><div style="display:flex;gap:10px;align-items:center"><div class="icon">📊</div><div><strong>Track</strong><div class="muted" style="font-size:13px">Live stats & leaderboards</div></div></div></div>
       </div>
-
     </div>
 
-    <aside class="cardSmall qrWrap">
+    <aside class="cardSmall qrWrap" data-aos="fade-left">
       <div style="font-weight:800">Scan to Join</div>
       <img id="joinQR" alt="QR code to join EcoPulse" />
       <div class="muted" style="font-size:13px;margin-top:8px">Scan to sign up & volunteer</div>
     </aside>
   </section>
 
-  <!-- About -->
-  <section id="about" class="section">
-    <h3 style="margin-top:0">About EcoPulse</h3>
+  <!-- ABOUT -->
+  <section id="about" class="section" data-aos="fade-up">
+    <h3>About EcoPulse</h3>
     <p class="muted">EcoPulse started as a student project to reduce single-use plastic in our Faculty. We build DIY bins, run collection shifts, host upcycle workshops, and keep score through weekly challenges. This site is your hub to join, log, and track our impact.</p>
 
     <div style="display:flex;gap:16px;margin-top:16px;flex-wrap:wrap">
-      <div style="flex:1;min-width:220px" class="cardSmall">
+      <div style="flex:1;min-width:220px" class="cardSmall" data-aos="fade-right">
         <strong>Our Mission</strong>
         <ul style="margin:8px 0 0 16px" class="muted">
           <li>Reduce plastic waste on campus</li>
@@ -241,7 +173,7 @@
         </ul>
       </div>
 
-      <div style="flex:1;min-width:220px" class="cardSmall">
+      <div style="flex:1;min-width:220px" class="cardSmall" data-aos="fade-left">
         <strong>How it Works</strong>
         <ul style="margin:8px 0 0 16px" class="muted">
           <li>DIY bins placed in high-traffic sports areas</li>
@@ -252,11 +184,11 @@
     </div>
   </section>
 
-  <!-- DIY Project -->
-  <section class="section">
-    <h3 style="margin-top:0">DIY Recycling Bins</h3>
+  <!-- DIY PROJECT -->
+  <section class="section" data-aos="fade-up">
+    <h3>DIY Recycling Bins</h3>
     <div style="display:flex;gap:18px;align-items:flex-start;flex-wrap:wrap">
-      <div style="flex:1;min-width:260px">
+      <div style="flex:1;min-width:260px" data-aos="fade-right">
         <p class="muted">All bins are student-made from reused buckets, barrels, and paint cans. Each bin is labeled, decorated with the EcoPulse logo, and equipped with a QR sticker for joining or logging recyclables.</p>
         <ul class="muted">
           <li>Materials: old buckets, colored vinyl/paper, laminated labels</li>
@@ -264,7 +196,7 @@
         </ul>
       </div>
 
-      <div style="width:300px" class="cardSmall" id="binPreview">
+      <div style="width:300px" class="cardSmall" id="binPreview" data-aos="fade-left">
         <div style="text-align:center">
           <strong>Bin QR</strong>
           <img id="trackQR" alt="QR code to log recycle" style="width:180px;height:180px;border-radius:12px;margin-top:10px" />
@@ -274,15 +206,15 @@
     </div>
   </section>
 
-  <!-- Join -->
-  <section id="join" class="section">
+  <!-- JOIN -->
+  <section id="join" class="section" data-aos="fade-up">
     <div class="joinCard">
-      <div>
-        <h3 style="margin-top:0">Join EcoPulse</h3>
+      <div data-aos="fade-right">
+        <h3>Join EcoPulse</h3>
         <p class="muted">Wanna help collect, design, or spread the word? Scan the QR or click the button to join the team. We'll add you to the volunteer list and message next steps.</p>
       </div>
 
-      <div style="display:flex;gap:12px;align-items:center;flex-direction:column">
+      <div style="display:flex;gap:12px;align-items:center;flex-direction:column" data-aos="fade-left">
         <img id="joinQRbig" alt="Join QR" style="width:200px;height:200px;border-radius:12px" />
         <div style="display:flex;gap:8px">
           <button class="btn" onclick="openLink(joinFormUrl)">Join Now</button>
@@ -292,360 +224,55 @@
     </div>
   </section>
 
-  <!-- Challenges & Leaderboard -->
-  <section class="section">
-    <h3 style="margin-top:0">Eco Challenges</h3>
+  <!-- CHALLENGES -->
+  <section class="section" data-aos="fade-up">
+    <h3>Eco Challenges</h3>
     <p class="muted">Weekly mini-challenges keep things fun. Example challenges:</p>
     <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:12px">
-      <div class="cardSmall" style="min-width:200px">
-        <strong>Plastic Sprint</strong>
-        <div class="muted" style="font-size:13px">Collect the most bottles this week — class wins a shoutout.</div>
-      </div>
-      <div class="cardSmall" style="min-width:200px">
-        <strong>DIY Sunday</strong>
-        <div class="muted" style="font-size:13px">Create planters or art from bottles.</div>
-      </div>
-      <div class="cardSmall" style="min-width:200px">
-        <strong>Refill Challenge</strong>
-        <div class="muted" style="font-size:13px">Use reusable bottle for 7 days straight.</div>
-      </div>
+      <div class="cardSmall" data-aos="zoom-in"><strong>Plastic Sprint</strong><div class="muted" style="font-size:13px">Collect the most bottles this week — class wins a shoutout.</div></div>
+      <div class="cardSmall" data-aos="zoom-in" data-aos-delay="100"><strong>DIY Sunday</strong><div class="muted" style="font-size:13px">Create planters or art from bottles.</div></div>
+      <div class="cardSmall" data-aos="zoom-in" data-aos-delay="200"><strong>Refill Challenge</strong><div class="muted" style="font-size:13px">Use reusable bottle for 7 days straight.</div></div>
     </div>
-
-    <div style="margin-top:16px" class="muted">Leaderboard (placeholder) — link this to your live Google Sheet or Data Studio later for real-time updates.</div>
   </section>
 
-  <!-- Contact -->
-  <section class="section">
-    <h3 style="margin-top:0">Contact & Credits</h3>
+  <!-- CONTACT -->
+  <section class="section" data-aos="fade-up">
+    <h3>Contact & Credits</h3>
     <p class="muted">EcoPulse — Faculty of Sports Management, SEU</p>
-    <p class="muted">Project by the EcoPulse Team. Want us to visit your class or set up a bin? <a class="linkish" href="mailto:ecopulse@seu.edu">ecopulse@seu.edu</a> (replace with your contact) </p>
+    <p class="muted">Project by the EcoPulse Team. Want us to visit your class or set up a bin? <a class="linkish" href="mailto:ecopulse@seu.edu">ecopulse@seu.edu</a> (replace with your contact)</p>
   </section>
 
 </main>
 
-<footer>
+<footer data-aos="fade-up">
   © <span id="year"></span> EcoPulse • Faculty of Sports Management — SEU • “The heartbeat of change.”
 </footer>
 
+<!-- Scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 <script>
-  // ---------- CONFIG: replace these URLs with your real links ----------
-  const joinFormUrl = "https://forms.gle/YOUR_JOIN_FORM_LINK";      // <-- replace with your real Join form
-  const trackerFormUrl = "https://forms.gle/YOUR_TRACKER_FORM_LINK"; // <-- replace with your real Tracker form
-  // -------------------------------------------------------------------
+  const joinFormUrl = "https://forms.gle/YOUR_JOIN_FORM_LINK";
+  const trackerFormUrl = "https://forms.gle/YOUR_TRACKER_FORM_LINK";
 
-  // Quick helpers
   function urlToQR(url, size=300){
     return 'https://chart.googleapis.com/chart?chs=' + size + 'x' + size + '&cht=qr&chl=' + encodeURIComponent(url) + '&chld=L|1';
   }
-
   function setUpQRs(){
-    // small hero QR
     document.getElementById('joinQR').src = urlToQR(joinFormUrl, 180);
-    // large join page QR
     document.getElementById('joinQRbig').src = urlToQR(joinFormUrl, 300);
-    // bin/track QR
     document.getElementById('trackQR').src = urlToQR(trackerFormUrl, 180);
   }
-
-  function openLink(u){ window.open(u, '_blank') }
+  function openLink(u){ window.open(u, '_blank'); }
   function copyLink(u){
     navigator.clipboard.writeText(u).then(()=> alert('Link copied to clipboard!'));
   }
-
-  // scroll helper
   function scrollToSection(id){
     const el = document.getElementById(id);
     if(el) el.scrollIntoView({behavior:'smooth', block:'start'});
   }
-
-  // init
   document.getElementById('year').textContent = new Date().getFullYear();
   setUpQRs();
-
-  // If the user hasn't replaced the form links, show a console warning
-  if(joinFormUrl.includes('YOUR_JOIN_FORM_LINK') || trackerFormUrl.includes('YOUR_TRACKER_FORM_LINK')){
-    console.warn('Replace joinFormUrl and trackerFormUrl values in the HTML with your real Google Form links.');
-  }
+  AOS.init({ duration: 1200 });
 </script>
-
-</body>
-</html>
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>EcoPulse — SEU | Faculty of Sports Management</title>
-  <meta name="description" content="EcoPulse — The heartbeat of change. Student-led sustainability initiative by the Faculty of Sports Management (SEU)." />
-  <style>
-    :root{
-      --green:#2ea44f;
-      --accent:#1f8a3d;
-      --dark:#0b2b1a;
-      --beige:#fbf7ef;
-      --muted:#6b6b6b;
-      --glass: rgba(255,255,255,0.9);
-      --card:#ffffff;
-      --radius:14px;
-      font-family: 'Poppins', Inter, system-ui, -apple-system, 'Segoe UI', Roboto, Arial;
-    }
-    *{box-sizing:border-box}
-    body{margin:0;background:linear-gradient(180deg,var(--beige),#fff 40%);color:var(--dark);-webkit-font-smoothing:antialiased}
-    header{
-      display:flex;align-items:center;gap:16px;padding:18px 6vw;background:rgba(255,255,255,0.6);backdrop-filter: blur(6px);position:sticky;top:0;z-index:40;border-bottom:1px solid rgba(11,43,26,0.04)
-    }
-    .logo {display:flex;align-items:center;gap:12px}
-    .logo img{width:64px;height:64px;object-fit:contain;border-radius:10px;box-shadow: 0 6px 18px rgba(46,164,79,0.08)}
-    h1{font-size:18px;margin:0}
-    .navBtns{margin-left:auto;display:flex;gap:10px}
-    .btn{background:var(--green);color:#fff;padding:9px 14px;border-radius:12px;border:none;cursor:pointer;font-weight:700;box-shadow:0 6px 18px rgba(46,164,79,0.14)}
-    .btn.ghost{background:transparent;color:var(--dark);border:1px solid rgba(11,43,26,0.06)}
-    main{max-width:1100px;margin:36px auto;padding:0 6vw}
-    .hero{
-      display:grid;grid-template-columns:1fr 360px;gap:28px;align-items:center;margin-bottom:26px;
-    }
-    .heroCard{
-      background:linear-gradient(180deg, rgba(255,255,255,0.9), rgba(250,250,250,0.9));
-      border-radius:var(--radius);padding:28px;box-shadow:0 12px 40px rgba(11,43,26,0.04)
-    }
-    .kicker{display:inline-block;padding:6px 10px;border-radius:999px;background:rgba(31,138,61,0.12);color:var(--accent);font-weight:700;margin-bottom:10px}
-    h2{font-size:28px;margin:8px 0 10px}
-    p.lead{color:var(--muted);line-height:1.5;margin-bottom:18px}
-    .actions{display:flex;gap:12px;flex-wrap:wrap}
-    .cardSmall{background:var(--card);border-radius:12px;padding:14px;box-shadow:0 10px 30px rgba(11,43,26,0.04);display:flex;flex-direction:column;gap:10px}
-    .qrWrap{text-align:center}
-    .qrWrap img{width:180px;height:180px;border-radius:10px}
-    .section{margin:28px 0;padding:20px;border-radius:14px;background:linear-gradient(180deg,rgba(255,255,255,0.9),rgba(255,255,255,0.95));box-shadow:0 10px 30px rgba(11,43,26,0.03)}
-    .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-    .icon{width:48px;height:48px;border-radius:10px;display:inline-grid;place-items:center;background:linear-gradient(180deg,rgba(46,164,79,0.12),rgba(31,138,61,0.06));font-weight:800;color:var(--accent)}
-    ul{padding-left:18px}
-    .joinCard{display:flex;gap:16px;align-items:center;justify-content:space-between;flex-wrap:wrap}
-    footer{padding:16px 6vw;text-align:center;color:var(--muted);font-size:14px;margin-top:28px}
-    /* responsive */
-    @media (max-width:900px){
-      .hero{grid-template-columns:1fr;gap:16px}
-      .heroCard{order:2}
-      .qrWrap img{width:150px;height:150px}
-      .grid3{grid-template-columns:1fr}
-    }
-    /* small helper */
-    .muted{color:var(--muted)}
-    .pill{display:inline-block;padding:6px 10px;border-radius:999px;background:rgba(31,138,61,0.08);color:var(--accent);font-weight:700}
-    a.linkish{color:var(--accent);font-weight:700;text-decoration:none}
-  </style>
-</head>
-<body>
-
-<header>
-  <div class="logo">
-    <!-- Replace src with your real logo filename (EcoPulse_logo.png) -->
-    <img src="EcoPulse logo.jpeg" alt="EcoPulse logo" />
-    <div>
-      <h1>EcoPulse</h1>
-      <div class="muted" style="font-size:13px">Faculty of Sports Management — SEU</div>
-    </div>
-  </div>
-
-  <div class="navBtns">
-    <button class="btn" onclick="scrollToSection('about')">About</button>
-    <button class="btn ghost" onclick="scrollToSection('join')">Join</button>
-  </div>
-</header>
-
-<main>
-  <section class="hero">
-    <div class="heroCard">
-      <span class="kicker">EcoPulse • SEU</span>
-      <h2>Small actions. Big pulse.</h2>
-      <p class="lead">EcoPulse is the student-led sustainability movement from the Faculty of Sports Management. We collect, recycle, and upcycle plastic bottles — making our university cleaner and the campus greener. Join the movement and be the pulse of change.</p>
-
-      <div class="actions">
-        <button class="btn" onclick="openLink(joinFormUrl)">Join the Team</button>
-        <button class="btn ghost" onclick="openLink(trackerFormUrl)">Log a Recycle</button>
-      </div>
-
-      <div style="margin-top:18px" class="grid3">
-        <div class="cardSmall">
-          <div style="display:flex;gap:10px;align-items:center">
-            <div class="icon">♻️</div>
-            <div>
-              <strong>Collect</strong>
-              <div class="muted" style="font-size:13px">DIY bins in locker rooms & gym</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="cardSmall">
-          <div style="display:flex;gap:10px;align-items:center">
-            <div class="icon">🌱</div>
-            <div>
-              <strong>Reuse</strong>
-              <div class="muted" style="font-size:13px">Planters, art & campus projects</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="cardSmall">
-          <div style="display:flex;gap:10px;align-items:center">
-            <div class="icon">📊</div>
-            <div>
-              <strong>Track</strong>
-              <div class="muted" style="font-size:13px">Live stats & leaderboards</div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-    <aside class="cardSmall qrWrap">
-      <div style="font-weight:800">Scan to Join</div>
-      <img id="joinQR" alt="QR code to join EcoPulse" />
-      <div class="muted" style="font-size:13px;margin-top:8px">Scan to sign up & volunteer</div>
-    </aside>
-  </section>
-
-  <!-- About -->
-  <section id="about" class="section">
-    <h3 style="margin-top:0">About EcoPulse</h3>
-    <p class="muted">EcoPulse started as a student project to reduce single-use plastic in our university. We build DIY bins, run collection shifts, host upcycle workshops, and keep score through weekly challenges. This site is your hub to join, log, and track our impact.</p>
-
-    <div style="display:flex;gap:16px;margin-top:16px;flex-wrap:wrap">
-      <div style="flex:1;min-width:220px" class="cardSmall">
-        <strong>Our Mission</strong>
-        <ul style="margin:8px 0 0 16px" class="muted">
-          <li>Reduce plastic waste on campus</li>
-          <li>Promote reusable habits</li>
-          <li>Create visible eco impact through student action</li>
-        </ul>
-      </div>
-
-      <div style="flex:1;min-width:220px" class="cardSmall">
-        <strong>How it Works</strong>
-        <ul style="margin:8px 0 0 16px" class="muted">
-          <li>DIY bins placed in high-traffic sports areas</li>
-          <li>Scan QR to Join or Log a Recycle</li>
-          <li>Weekly collection & updates — leaderboard for winners</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- DIY Project -->
-  <section class="section">
-    <h3 style="margin-top:0">DIY Recycling Bins</h3>
-    <div style="display:flex;gap:18px;align-items:flex-start;flex-wrap:wrap">
-      <div style="flex:1;min-width:260px">
-        <p class="muted">All bins are student-made from reused buckets, barrels, and paint cans. Each bin is labeled, decorated with the EcoPulse logo, and equipped with a QR sticker for joining or logging recyclables.</p>
-        <ul class="muted">
-          <li>Materials: old buckets, colored vinyl/paper, laminated labels</li>
-          <li>Collection: scheduled twice weekly by EcoPulse volunteers</li>
-        </ul>
-      </div>
-
-      <div style="width:300px" class="cardSmall" id="binPreview">
-        <div style="text-align:center">
-          <strong>Bin QR</strong>
-          <img id="trackQR" alt="QR code to log recycle" style="width:180px;height:180px;border-radius:12px;margin-top:10px" />
-          <div class="muted" style="font-size:13px;margin-top:8px">Place this sticker on every bin</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Join -->
-  <section id="join" class="section">
-    <div class="joinCard">
-      <div>
-        <h3 style="margin-top:0">Join EcoPulse</h3>
-        <p class="muted">Wanna help collect, design, or spread the word? Scan the QR or click the button to join the team. We'll add you to the volunteer list and message next steps.</p>
-      </div>
-
-      <div style="display:flex;gap:12px;align-items:center;flex-direction:column">
-        <img id="joinQRbig" alt="Join QR" style="width:200px;height:200px;border-radius:12px" />
-        <div style="display:flex;gap:8px">
-          <button class="btn" onclick="openLink(joinFormUrl)">Join Now</button>
-          <button class="btn ghost" onclick="copyLink(joinFormUrl)">Copy Link</button>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Challenges & Leaderboard -->
-  <section class="section">
-    <h3 style="margin-top:0">Eco Challenges</h3>
-    <p class="muted">Weekly mini-challenges keep things fun. Example challenges:</p>
-    <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:12px">
-      <div class="cardSmall" style="min-width:200px">
-        <strong>Plastic Sprint</strong>
-        <div class="muted" style="font-size:13px">Collect the most bottles this week — class wins a shoutout.</div>
-      </div>
-      <div class="cardSmall" style="min-width:200px">
-        <strong>DIY Sunday</strong>
-        <div class="muted" style="font-size:13px">Create planters or art from bottles.</div>
-      </div>
-      <div class="cardSmall" style="min-width:200px">
-        <strong>Refill Challenge</strong>
-        <div class="muted" style="font-size:13px">Use reusable bottle for 7 days straight.</div>
-      </div>
-    </div>
-
-    <div style="margin-top:16px" class="muted">Leaderboard (placeholder) — link this to your live Google Sheet or Data Studio later for real-time updates.</div>
-  </section>
-
-  <!-- Contact -->
-  <section class="section">
-    <h3 style="margin-top:0">Contact & Credits</h3>
-    <p class="muted">EcoPulse — Faculty of Sports Management, SEU</p>
-    <p class="muted">Project by the EcoPulse Team. Want us to visit your class or set up a bin? <a class="linkish" href="mailto:ecopulse@seu.edu">ecopulse@seu.edu</a> (replace with your contact) </p>
-  </section>
-
-</main>
-
-<footer>
-  © <span id="year"></span> EcoPulse • Faculty of Sports Management — SEU • “The heartbeat of change.”
-</footer>
-
-<script>
-  // ---------- CONFIG: replace these URLs with your real links ----------
-  const joinFormUrl = "https://forms.gle/YOUR_JOIN_FORM_LINK";      // <-- replace with your real Join form
-  const trackerFormUrl = "https://forms.gle/YOUR_TRACKER_FORM_LINK"; // <-- replace with your real Tracker form
-  // -------------------------------------------------------------------
-
-  // Quick helpers
-  function urlToQR(url, size=300){
-    return 'https://chart.googleapis.com/chart?chs=' + size + 'x' + size + '&cht=qr&chl=' + encodeURIComponent(url) + '&chld=L|1';
-  }
-
-  function setUpQRs(){
-    // small hero QR
-    document.getElementById('joinQR').src = urlToQR(joinFormUrl, 180);
-    // large join page QR
-    document.getElementById('joinQRbig').src = urlToQR(joinFormUrl, 300);
-    // bin/track QR
-    document.getElementById('trackQR').src = urlToQR(trackerFormUrl, 180);
-  }
-
-  function openLink(u){ window.open(u, '_blank') }
-  function copyLink(u){
-    navigator.clipboard.writeText(u).then(()=> alert('Link copied to clipboard!'));
-  }
-
-  // scroll helper
-  function scrollToSection(id){
-    const el = document.getElementById(id);
-    if(el) el.scrollIntoView({behavior:'smooth', block:'start'});
-  }
-
-  // init
-  document.getElementById('year').textContent = new Date().getFullYear();
-  setUpQRs();
-
-  // If the user hasn't replaced the form links, show a console warning
-  if(joinFormUrl.includes('YOUR_JOIN_FORM_LINK') || trackerFormUrl.includes('YOUR_TRACKER_FORM_LINK')){
-    console.warn('Replace joinFormUrl and trackerFormUrl values in the HTML with your real Google Form links.');
-  }
-</script>
-
 </body>
 </html>

@@ -244,9 +244,13 @@
 
 </main>
 
-<footer data-aos="fade-up">
+<footer class="text-center py-4 mt-8 text-green-700">
   © <span id="year"></span> EcoPulse • Faculty of Sports Management — SEU • “The heartbeat of change.”
 </footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 
 <!-- Scripts -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
@@ -276,3 +280,4 @@
 </script>
 </body>
 </html>
+

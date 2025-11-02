@@ -137,32 +137,24 @@
     <div class="heroCard">
       <span class="kicker">EcoPulse • SEU</span>
       <h2>Small actions. Big pulse.</h2>
-      <p class="lead">EcoPulse is the student-led sustainability movement from the Faculty of Sports Management. We collect, recycle, and upcycle plastic bottles — making the locker rooms cleaner and the campus greener. Join the movement and be the pulse of change.</p>
+      <p class="lead">EcoPulse is the student-led sustainability movement from the Faculty of Sports Management. We collect, recycle, and upcycle plastic bottles — making the campus greener. Join the movement and be the pulse of change.</p>
 
       <div class="actions">
         <button class="btn" onclick="openLink(joinFormUrl)">Join the Team</button>
-        <button class="btn ghost" onclick="openLink(trackerFormUrl)">Log a Recycle</button>
       </div>
 
       <div style="margin-top:18px" class="grid3">
         <div class="cardSmall" data-aos="zoom-in"><div style="display:flex;gap:10px;align-items:center"><div class="icon">♻️</div><div><strong>Collect</strong><div class="muted" style="font-size:13px">DIY bins in locker rooms & gym</div></div></div></div>
         <div class="cardSmall" data-aos="zoom-in" data-aos-delay="100"><div style="display:flex;gap:10px;align-items:center"><div class="icon">🌱</div><div><strong>Reuse</strong><div class="muted" style="font-size:13px">Planters, art & campus projects</div></div></div></div>
-        <div class="cardSmall" data-aos="zoom-in" data-aos-delay="200"><div style="display:flex;gap:10px;align-items:center"><div class="icon">📊</div><div><strong>Track</strong><div class="muted" style="font-size:13px">Live stats & leaderboards</div></div></div></div>
       </div>
     </div>
-
-    <!-- FIXED "Scan to Join" -->
-    <aside class="cardSmall qrWrap" data-aos="fade-left" style="text-align:center;">
-      <div style="font-weight:800; text-align:center;">Scan to Join</div>
-      <img src="qr%20code.jpeg" alt="QR code to join EcoPulse" style="display:block; margin:0 auto;">
-      <div class="muted" style="font-size:13px;margin-top:8px;text-align:center;">Scan to sign up & volunteer</div>
-    </aside>
+    
   </section>
 
   <!-- ABOUT -->
   <section id="about" class="section" data-aos="fade-up">
     <h3>About EcoPulse</h3>
-    <p class="muted">EcoPulse started as a student project to reduce single-use plastic in our Faculty. We build DIY bins, run collection shifts, host upcycle workshops, and keep score through weekly challenges. This site is your hub to join, log, and track our impact.</p>
+    <p class="muted">EcoPulse started as a student project to reduce single-use plastic in our Faculty. We build DIY bins, run collection shifts, host upcycle workshops, and keep score through weekly challenges. This site is your hub to join the movement.</p>
 
     <div style="display:flex;gap:16px;margin-top:16px;flex-wrap:wrap">
       <div style="flex:1;min-width:220px" class="cardSmall" data-aos="fade-right">
@@ -197,15 +189,6 @@
         </ul>
       </div>
 
-      <!-- FIXED BIN QR -->
-      <div style="width:300px" class="cardSmall" id="binPreview" data-aos="fade-left">
-        <div style="text-align:center">
-          <strong style="display:block; margin-bottom:8px;">Bin QR</strong>
-          <img src="qr%20code.jpeg" alt="QR code to log recycle" style="width:180px;height:180px;border-radius:12px;margin:0 auto;">
-          <div class="muted" style="font-size:13px;margin-top:8px">Place this sticker on every bin</div>
-        </div>
-      </div>
-    </div>
   </section>
 
   <!-- JOIN -->
@@ -217,7 +200,6 @@
       </div>
 
       <div style="display:flex;gap:12px;align-items:center;flex-direction:column" data-aos="fade-left">
-        <img src="qr%20code.jpeg" alt="Join QR" style="width:200px;height:200px;border-radius:12px">
         <div style="display:flex;gap:8px">
           <button class="btn" onclick="openLink(joinFormUrl)">Join Now</button>
           <button class="btn ghost" onclick="copyLink(joinFormUrl)">Copy Link</button>
@@ -258,7 +240,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 <script>
   const joinFormUrl = "https://docs.google.com/forms/d/e/1FAIpQLScyu_SH_1HU9WcWVbhijIyAMJKgbdxwOUCEuIf3POGspWFipA/viewform";
-  const trackerFormUrl = "https://forms.gle/YOUR_TRACKER_FORM_LINK";
 
   function openLink(u){ window.open(u, '_blank'); }
   function copyLink(u){ navigator.clipboard.writeText(u).then(()=> alert('Link copied to clipboard!')); }
@@ -270,4 +251,5 @@
 </script>
 </body>
 </html>
+
 
